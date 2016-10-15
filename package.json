@@ -1,0 +1,38 @@
+{
+  "name": "angular2-emojify",
+  "version": "0.0.1",
+  "description": "Angular Pipe that replaces all :emoji: with the actual emoji",
+  "main": "build/src/index.js",
+  "typings": "./build/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilkisiela/angular2-emojify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kamilkisiela/angular2-emojify/issues"
+  },
+  "homepage": "https://github.com/kamilkisiela/angular2-emojify#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "pipe",
+    "emoji",
+    "emojify",
+    "transform"
+  ],
+  "author": "Kamil Kisiela <kamil.kisiela@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rxjs": "^5.0.0-rc.1",
+    "typescript": "^2.0.3"
+  },
+  "dependencies": {
+    "@angular/core": "^2.0.0",
+    "node-emoji": "^1.4.1"
+  }
+}
