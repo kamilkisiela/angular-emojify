@@ -10,7 +10,7 @@ Angular Pipe that replaces all :emoji: with the actual emoji
 npm install angular2-emojify
 ```
 
-## Usage
+## EmojifyModule
 
 ```ts
 import { EmojifyModule } from 'angular2-emojify';
@@ -28,6 +28,21 @@ import { EmojifyModule } from 'angular2-emojify';
 export class AppModule {}
 ```
 
+## EmojifyPipe
+
+```ts
+@Component({
+  // ...
+})
+class AppComponent() {
+  description: string = `It's a :rocket:`;
+}
+```
+
 ```html
 <p> {{ description | emojify }} </p>
 ```
+
+Outputs: It's a :rocket:
+
+
