@@ -14,7 +14,7 @@
   "homepage": "https://github.com/kamilkisiela/angular2-emojify#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "./node_modules/.bin/ngc -p tsconfig.json",
     "prepublish": "npm run build"
   },
   "keywords": [
@@ -28,8 +28,11 @@
   "author": "Kamil Kisiela <kamil.kisiela@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "rxjs": "^5.0.0-rc.1",
-    "typescript": "^2.0.3"
+    "@angular/compiler": "^2.1.0",
+    "@angular/compiler-cli": "^2.1.0",
+    "@angular/platform-server": "^2.1.0",
+    "rxjs": "^5.0.0-beta.12",
+    "typescript": "^2.0.6"
   },
   "dependencies": {
     "@angular/core": "^2.0.0",
