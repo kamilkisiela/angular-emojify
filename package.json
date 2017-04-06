@@ -35,7 +35,9 @@
     "typescript": "^2.0.6"
   },
   "dependencies": {
-    "@angular/core": "^2.0.0",
     "node-emoji": "^1.4.1"
+  },
+  "peerDependencies": {
+    "@angular/core": "^2.0.0"
   }
 }
