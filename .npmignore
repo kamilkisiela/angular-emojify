@@ -1,3 +1,5 @@
 src/
 compiled/
+.vscode/
+CHANGELOG.md
 tsconfig.json
