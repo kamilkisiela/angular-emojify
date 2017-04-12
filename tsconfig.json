@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
-    "rootDir": ".",
+    "rootDir": "src",
     "outDir": "build",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -17,6 +17,8 @@
     "src/index.ts"
    ],
    "angularCompilerOptions": {
-     "genDir": "compiled"
+     "skipTemplateCodegen": true,
+     "annotateForClosureCompiler": true,
+    "strictMetadataEmit": true
    }
 }

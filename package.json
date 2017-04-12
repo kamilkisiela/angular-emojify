@@ -1,20 +1,24 @@
 {
-  "name": "angular2-emojify",
+  "name": "angular-emojify",
   "version": "0.1.0",
   "description": "Angular Pipe that replaces all :emoji: with the actual emoji",
-  "main": "build/src/index.js",
-  "typings": "./build/src/index.d.ts",
+  "main": "build/bundles/emojify.umd.js",
+  "module": "build/index.js",
+  "jsmain:next": "build/index.js",
+  "typings": "build/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kamilkisiela/angular2-emojify.git"
+    "url": "git+https://github.com/kamilkisiela/angular-emojify.git"
   },
   "bugs": {
-    "url": "https://github.com/kamilkisiela/angular2-emojify/issues"
+    "url": "https://github.com/kamilkisiela/angular-emojify/issues"
   },
-  "homepage": "https://github.com/kamilkisiela/angular2-emojify#readme",
+  "homepage": "https://github.com/kamilkisiela/angular-emojify#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build",
     "build": "./node_modules/.bin/ngc -p tsconfig.json",
+    "postbuild": "npm run bundle",
+    "bundle": "rollup -c",
     "prepublish": "npm run build"
   },
   "keywords": [
@@ -28,16 +32,20 @@
   "author": "Kamil Kisiela <kamil.kisiela@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@angular/compiler": "^2.1.0",
-    "@angular/compiler-cli": "^2.1.0",
-    "@angular/platform-server": "^2.1.0",
-    "typescript": "^2.0.6"
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "rollup": "^0.41.6",
+    "rxjs": "^5.0.1",
+    "typescript": "^2.2.1",
+    "zone.js": "^0.8.4"
   },
   "dependencies": {
-    "node-emoji": "^1.4.1"
+    "node-emoji": "^1.5.1"
   },
   "peerDependencies": {
-    "@angular/core": "^2.1.1 || ^4.0.0",
-    "rxjs": "^5.0.1"
+    "@angular/core": "^2.1.1 || >=4.0.0-beta <5.0.0",
+    "rxjs": "^5.0.1",
+    "zone.js": "^0.8.4"
   }
 }

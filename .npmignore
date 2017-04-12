@@ -1,3 +1,6 @@
 src/
 compiled/
+.vscode/
+.travis.yml
+CHANGELOG.md
 tsconfig.json
