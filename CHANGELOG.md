@@ -2,6 +2,8 @@
 
 ### vNEXT
 
+### v0.2.0
+
 - **Breaking change:** new name `angular-emojify`
 - Added UMD bundle and ES2015 modules
 - Added AoT support
