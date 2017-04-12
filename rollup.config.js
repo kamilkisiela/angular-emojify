@@ -1,5 +1,5 @@
 export default {
-  entry: 'build/src/index.js',
+  entry: 'build/index.js',
   dest: 'build/bundles/emojify.umd.js',
   format: 'umd',
   moduleName: 'ng.emojify',

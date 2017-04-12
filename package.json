@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "Angular Pipe that replaces all :emoji: with the actual emoji",
   "main": "build/bundles/emojify.umd.js",
-  "module": "build/src/index.js",
-  "jsmain:next": "build/src/index.js",
-  "typings": "build/src/index.d.ts",
+  "module": "build/index.js",
+  "jsmain:next": "build/index.js",
+  "typings": "build/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kamilkisiela/angular-emojify.git"
