@@ -1,19 +1,19 @@
-# angular2-emojify
+# angular-emojify
 
-[![npm version](https://badge.fury.io/js/angular2-emojify.svg)](https://badge.fury.io/js/angular2-emojify)
+[![npm version](https://badge.fury.io/js/angular-emojify.svg)](https://badge.fury.io/js/angular-emojify)
 
 Angular Pipe that replaces all :emoji: with the actual emoji
 
 ## Install
 
 ```
-npm install angular2-emojify
+npm install angular-emojify
 ```
 
 ## EmojifyModule
 
 ```ts
-import { EmojifyModule } from 'angular2-emojify';
+import { EmojifyModule } from 'angular-emojify';
 
 @NgModule({
   declarations: [
