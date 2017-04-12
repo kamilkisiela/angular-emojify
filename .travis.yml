@@ -1,0 +1,20 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - "6"
+
+cache:
+  directories:
+    # cache node modules
+    - $HOME/.npm
+    - node_modules
+
+notifications:
+  # disable email notification
+  email: false
+
+before_install:
+  # remove unused node modules from cache
+  - npm prune
