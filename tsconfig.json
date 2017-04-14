@@ -5,22 +5,10 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
-    "rootDir": "src",
-    "outDir": "build",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": false,
-    "lib": ["es6", "dom"]
-  },
-  "files": [
-    "src/typings.d.ts",
-    "src/index.ts",
-    "tests/EmojifyPipe.spec.ts",
-    "tests/EmojifyModule.spec.ts"
-   ],
-   "angularCompilerOptions": {
-     "skipTemplateCodegen": true,
-     "annotateForClosureCompiler": true,
-    "strictMetadataEmit": true
-   }
+    "lib": ["es6", "dom"],
+    "mapRoot": "."
+  }
 }

@@ -16,7 +16,7 @@
   "homepage": "https://github.com/kamilkisiela/angular-emojify#readme",
   "scripts": {
     "test": "jest",
-    "build": "./node_modules/.bin/ngc -p tsconfig.json",
+    "build": "./node_modules/.bin/ngc -p tsconfig.build.json",
     "postbuild": "npm run bundle",
     "bundle": "rollup -c",
     "prepublish": "npm run build"
