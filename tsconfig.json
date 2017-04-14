@@ -14,7 +14,9 @@
   },
   "files": [
     "src/typings.d.ts",
-    "src/index.ts"
+    "src/index.ts",
+    "tests/EmojifyPipe.spec.ts",
+    "tests/EmojifyModule.spec.ts"
    ],
    "angularCompilerOptions": {
      "skipTemplateCodegen": true,

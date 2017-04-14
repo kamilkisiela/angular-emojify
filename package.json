@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/kamilkisiela/angular-emojify#readme",
   "scripts": {
-    "test": "npm run build",
+    "test": "jest",
     "build": "./node_modules/.bin/ngc -p tsconfig.json",
     "postbuild": "npm run bundle",
     "bundle": "rollup -c",
@@ -35,8 +35,13 @@
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/core": "^4.0.0",
+    "@types/jest": "^19.2.2",
+    "jest": "^19.0.2",
+    "reflect-metadata": "^0.1.10",
+    "rimraf": "^2.6.1",
     "rollup": "^0.41.6",
     "rxjs": "^5.0.1",
+    "ts-jest": "^19.0.9",
     "typescript": "^2.2.1",
     "zone.js": "^0.8.4"
   },
@@ -47,5 +52,20 @@
     "@angular/core": "^2.1.1 || >=4.0.0-beta <5.0.0",
     "rxjs": "^5.0.1",
     "zone.js": "^0.8.4"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.test.json"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json"
+    ],
+    "testRegex": "(/tests/.*\\.(test|spec))\\.ts$",
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "browser": true
   }
 }
