@@ -17,9 +17,8 @@ describe('EmojifyPipe', () => {
 
   it('should transform', () => {
     const text = `It's a :rocket:!`;
-    const mocked = `mocked: ${text}`;
     
-    expect(emojifyPipe.transform(text)).toBe(mocked);
+    expect(emojifyPipe.transform(text)).toMatchSnapshot();
   });
 
   it('should be named emojify', () => {
