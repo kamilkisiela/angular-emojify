@@ -16,6 +16,8 @@
   "homepage": "https://github.com/kamilkisiela/angular-emojify#readme",
   "scripts": {
     "test": "jest",
+    "clean": "rimraf build/",
+    "prebuild": "npm run clean",
     "build": "./node_modules/.bin/ngc -p tsconfig.build.json",
     "postbuild": "npm run bundle",
     "bundle": "rollup -c",

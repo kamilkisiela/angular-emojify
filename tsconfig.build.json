@@ -1,12 +1,15 @@
 {
   "extends": "./tsconfig.json",
-  "comilerOptions": {
+  "compilerOptions": {
     "rootDir": "src",
     "outDir": "build"
   },
+  "files": [
+    "src/index.ts",
+    "src/typings.d.ts"
+  ],
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
-    "annotateForClosureCompiler": true,
     "strictMetadataEmit": true
   }
 }
