@@ -1,20 +1,21 @@
 sudo: false
-
 language: node_js
-
 node_js:
-  - "6"
-
+- '6'
 cache:
   directories:
-    # cache node modules
-    - $HOME/.npm
-    - node_modules
-
+  - "$HOME/.npm"
+  - node_modules
 notifications:
-  # disable email notification
   email: false
-
 before_install:
-  # remove unused node modules from cache
-  - npm prune
+- npm prune
+deploy:
+  provider: npm
+  email: kamil.kisiela@gmail.com
+  api_key:
+    secure: B6liklTfLd5MSkJJ+RRN6bfZKqt2vwxBPTFJNG7iRwgbMbtoZKRd19QbA1Ra3LYiLEweOpapefVjNkVDyNF5WpYIKQt4IR/GwOsV/PjhkLLFlZpMgCbpwxFRmpvs0mhN4DD/H7vxeihnADoynRpjiyltHsMMl2DLn80FL1ksVT0CxCKqoXIvg60Hj1LyT9b/BXVpbDoZ28OdbPyBDCucZAotCFf0DmXvPLiojgbz31//T9qLqsZxrrjvydO62acSMinwN3L0gpXYrgyReogLuwSWacaOmCVTA59LYvXM4dkrchjv8zMXAW74eNjOKFT+BiFGxZdAr4jpZc+jq0CSf2YlUG/CS8UQV3ehV7gYGt3IA9bRHsiNE9VQmyoMkzvRBmJgq5MZnJZIQ5T1N8WQM7uJ2GG3K2SDyfVi7VB3nepaqRGrhpOvTIrnolDpsDwn4sRw2LLmCUYWynd8oRNtf7m1ufNg/UkZqU8ylAkByPY7toRkOrfesEUWFo5jYnMsk/bPmxwZ3uF2g2ybo3mD0Sb6580J8nnJ1dgHEkygoB0EKO8f8UGeWC63vZhuGatI9YPnKM7SAiR7hJWH9kr9pBR40gZDDsOW2a7mHtW2qgKN7PWPkYKiWWrQmCR7+H6/kyWZU5LHH1eVqmxVFYUYRLr6wygt9YulnYKV3AZ3SiM=
+  on:
+    branch: master
+    tags: true
+    repo: kamilkisiela/angular-emojify
