@@ -1,6 +1,9 @@
 src/
-compiled/
+tests/
 .vscode/
 .travis.yml
 CHANGELOG.md
+rollup.config.js
+tsconfig.build.json
 tsconfig.json
+tsconfig.test.json

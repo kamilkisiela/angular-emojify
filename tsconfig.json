@@ -1,24 +1,14 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
-    "rootDir": "src",
-    "outDir": "build",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "lib": ["es6", "dom"]
-  },
-  "files": [
-    "src/typings.d.ts",
-    "src/index.ts"
-   ],
-   "angularCompilerOptions": {
-     "skipTemplateCodegen": true,
-     "annotateForClosureCompiler": true,
-    "strictMetadataEmit": true
-   }
+  }
 }
