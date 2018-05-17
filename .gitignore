@@ -45,3 +45,5 @@ jspm_packages
 *.tgz
 
 build/
+yarn.lock
+package-lock.json
